@@ -19,7 +19,7 @@ function Navbar(props) {
      </li>
 
     <li>
-     <Link href="/">
+     <Link href="/contact">
       <a>Contact Me</a>
      </Link>
      </li>
