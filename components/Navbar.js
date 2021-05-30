@@ -3,7 +3,7 @@ import Link from 'next/link'
 function Navbar(props) {
  return (
   <div>
-   <nav className="flex justify-around w-auto">
+   <nav>
     <ul className="flex justify-around">
 
     <li>
