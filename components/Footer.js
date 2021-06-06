@@ -1,7 +1,7 @@
 
 function Footer(props) {
  return (
-  <div className="fixed bottom-0 dark:bg-black">
+  <div className="fixed bottom-0 dark:bg-black w-11/12">
    <div className="flex justify-between w-full">
     <p>Designed with ❤ by Alan Akra</p>
 
