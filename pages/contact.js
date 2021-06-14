@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 function contact(props) {
  return (
-  <div className="text-center h-screen dark:bg-black dark:text-white px-4">
+  <div className="text-center h-full dark:bg-black dark:text-white px-4">
    <Title/>
    <br></br>
    <Navbar/>

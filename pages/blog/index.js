@@ -10,7 +10,7 @@ function blog({posts}) {
      return(
       <ul key={post.slug}>
         <li>
-          <Link href={`/temp-blog/${post.slug}`}>{post.title}</Link>
+          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </li>
       </ul>
      )
@@ -28,14 +28,21 @@ export async function getStaticProps(){
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
    query: `
-    query AllPostsQuery {
-     posts {
-       nodes {
-         slug
-         title
-       }
-     }
-   } 
+   query AllPostsQuery {
+    posts {
+      nodes {
+        id
+        slug
+        title
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+  
    `,
   })
  })

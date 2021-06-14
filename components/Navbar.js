@@ -7,7 +7,7 @@ function Navbar(props) {
     <ul className="flex justify-around">
 
     <li>
-     <Link href="/">
+     <Link href="/about">
       <a>About Me</a>
      </Link>
      </li>
