@@ -13,7 +13,7 @@ function About(props) {
     company: '@LIGM',
     startDate: 'Apr 2020',
     endDate: 'Jul 2020',
-    link: 'https://igm.univ-gustave-eiffel.fr/'
+    link: 'http://ligm.u-pem.fr/'
   }]
 
   const education = [{
@@ -33,7 +33,7 @@ function About(props) {
  return (
   <div className="h-full dark:bg-black dark:text-white pd-screen py-4">
     <h1 className="important-title-page">About me</h1>
-    <p className="dark:text-dlink">Hi 👋 I’m Alan, a web developer based in the Great Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Currently @CYU on Bachelor Web Development , i’m joining a Master of Web & Mobile engineering @IIM and I’m looking opportunities for an apprenticeship in web development.</p>
+    <p className="dark:text-dlink">Hi 👋 I’m Alan, a web developer based in the Great Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Currently <a href="http://cyu.fr" className="link-color" target="_blank">@CYU</a> on <a href="http://lp-dw.fr" className="link-color" target="_blank">Bachelor Web Development</a> , i’m joining a <a href="https://www.iim.fr/cursus/mastere-ingenierie-web-mobile/" className="link-color" target="_blank">Master of Web & Mobile</a> engineering <a href="http://iim.fr" className="link-color" target="_blank">@IIM</a> and I’m looking opportunities for an apprenticeship in web development.</p>
 
     <hr/>
 
