@@ -1,31 +1,64 @@
 import Footer from '../components/Footer'
 
 function About(props) {
+
+  const experience = [{
+    title: 'Web developer',
+    company: '@SopraBankingSoftware',
+    startDate: 'Nov 2020',
+    endDate: 'Sep 2021',
+    link: 'https://soprabanking.com'
+  },{
+    title: 'Web Developer',
+    company: '@LIGM',
+    startDate: 'Apr 2020',
+    endDate: 'Jul 2020',
+    link: 'https://igm.univ-gustave-eiffel.fr/'
+  }]
+
+  const education = [{
+    title: 'Bachelor Web developer',
+    school: '@CYU',
+    startDate: 'Sept 2020',
+    endDate: 'Jun 2021',
+    link: 'http://lp-dw.fr'
+  },{
+    title: '2 year University degree in Multimedia and Internet ',
+    school: '@UnivGustaveEiffel',
+    startDate: 'Sept 2018',
+    endDate: 'Apr 2020',
+    link: 'https://www.dut-mmi-champs.fr/'
+  }]
+
  return (
   <div className="h-full dark:bg-black dark:text-white pd-screen py-4">
     <h1 className="important-title-page">About me</h1>
-    <p className="dark:text-dlink">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo accusantium eligendi quas eveniet, blanditiis ut alias facere, vitae deserunt fugiat dignissimos distinctio a eaque veritatis. Doloribus fugit, cum maxime dignissimos nobis blanditiis modi perspiciatis delectus? Maxime quasi ad adipisci tempore, quibusdam esse autem! Error velit sed similique ipsum eum voluptatibus temporibus corrupti voluptatum, placeat incidunt nemo rem sint aliquid modi consectetur neque beatae maxime assumenda magni architecto. At, quidem ab!</p>
+    <p className="dark:text-dlink">Hi 👋 I’m Alan, a web developer based in the Great Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Currently @CYU on Bachelor Web Development , i’m joining a Master of Web & Mobile engineering @IIM and I’m looking opportunities for an apprenticeship in web development.</p>
 
     <hr/>
 
     <h2 className="subtitle-page">Experience</h2>
-    <div>
-      <h3>Web developer <a href="https://soprabanking.com" className="link-color" target="_blank">@SopraBankingSoftware</a></h3>
-      <h4>From Nov 2020 to Sep 2021</h4>
-      <br/>
-      <h3>Web developer <a href="https://igm.univ-gustave-eiffel.fr/" className="link-color" target="_blank">@LIGM</a></h3>
-      <h4>From Apr 2020 to Jul 2020</h4>
-    </div>
 
+    <div>
+      {experience.map((experience) => (
+        <>
+          <h3>{experience.title} <a href={experience.link} className="link-color" target="_blank">{experience.company}</a></h3>
+          <h4>From {experience.startDate} to {experience.endDate}</h4>
+          <br/>
+        </>
+      ))}
+    </div>
     <hr/>
 
     <h2 className="subtitle-page">Education</h2>
     <div>
-      <h3>Bachelor Web developer <a href="http://lp-dw.fr" className="link-color" target="_blank">@CYU</a></h3>
-      <h4>From Sept 2020 to Jun 2021</h4>
-      <br/>
-      <h3>2 year University degree in Multimedia and Internet <a href="https://www.dut-mmi-champs.fr/" className="link-color" target="_blank">@UnivGustaveEiffel</a></h3>
-      <h4>From Sept 2018 to Apr 2020</h4>
+      {education.map((education) => (
+        <>
+          <h3>{education.title} <a href={education.link} className="link-color" target="_blank">{education.school}</a></h3>
+          <h4>From {education.startDate} to {education.endDate}</h4>
+          <br/>
+        </>
+      ))}
     </div>
 
     <Footer />
