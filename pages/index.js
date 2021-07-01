@@ -34,6 +34,7 @@ function About() {
 
     <Head>
       <title>Alan Akra | Web developer</title>
+      <meta name="description" content="Alan Akra on the web"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
 
