@@ -29,7 +29,7 @@ export async function getStaticProps(){
   body: JSON.stringify({
    query: `
    query AllPostsQuery {
-    posts {
+    posts( last: 5, after: null ) {
       nodes {
         id
         slug
