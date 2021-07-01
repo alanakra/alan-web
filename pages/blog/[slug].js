@@ -1,16 +1,16 @@
+import Head from 'next/head'
 
 export default function Post( data ){
 
     const post = data.post
-    const imgUrl = post.featuredImage.node.sourceUrl
 
     return (
-        <div>
+        <div className="pd-screen py-4 h-all">
+            <Head>
+                <title>Alan Akra | {post.title}</title>
+            </Head>
             <h1 className="important-title-page">{post.title}</h1>
-
-            {imgUrl == true &&
-                <img width="640" height="426" src={imgUrl} />
-            }
+            <p>{post.date}</p>
             
             <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl"></div>
         </div>
@@ -30,6 +30,7 @@ export async function getStaticProps(context) {
                         title
                         slug
                         content
+                        date
                         featuredImage {
                             node {
                                 sourceUrl
@@ -68,6 +69,7 @@ export async function getStaticPaths() {
                         slug
                         content
                         title
+                        date
                         featuredImage {
                             node {
                                 sourceUrl
