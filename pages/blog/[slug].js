@@ -1,13 +1,17 @@
-import Image from 'next/image'
 
 export default function Post( data ){
 
-    const post = data.post;
+    const post = data.post
+    const imgUrl = post.featuredImage.node.sourceUrl
 
     return (
         <div>
-            <h1>{post.title}</h1>
-            <Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />
+            <h1 className="important-title-page">{post.title}</h1>
+
+            {imgUrl == true &&
+                <img width="640" height="426" src={imgUrl} />
+            }
+            
             <article dangerouslySetInnerHTML={{__html: post.content}}></article>
         </div>
     )
