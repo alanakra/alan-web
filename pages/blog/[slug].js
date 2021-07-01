@@ -12,7 +12,7 @@ export default function Post( data ){
                 <img width="640" height="426" src={imgUrl} />
             }
             
-            <article dangerouslySetInnerHTML={{__html: post.content}}></article>
+            <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl"></div>
         </div>
     )
 
