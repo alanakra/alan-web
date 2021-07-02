@@ -1,6 +1,11 @@
 .important-title-page{
  font-size: 3.75rem;
  margin-bottom: 1rem;
+ font-family: 'Mulish';
+}
+
+.text-roboto{
+ font-family: 'Roboto';
 }
 
 .subtitle-page{
@@ -11,6 +16,11 @@
 .link-color{
  color: #5023c7;
  font-weight: bold;
+ font-family: 'Roboto';
+}
+
+.blog-link:hover{
+ cursor: pointer;
 }
 
 .link-color:hover{

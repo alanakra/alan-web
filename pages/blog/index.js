@@ -15,21 +15,31 @@ function blog({posts}) {
     posts.nodes.map(post => {
 
     const date = new Date(post.date)
-    const formatDate = `${date.getFullYear()} - ${(date.getMonth()+1)} - ${date.getDate()}`
+    const year = date.getFullYear()
+    let month = date.getMonth() + 1
+    let day = date.getDate()
+
+    if (day < 10) {
+      day = `0${day}`
+    }
+
+    if (month < 10) {
+      month = `0${month}`
+    }
+
+    const formatDate = `${day}-${month}-${year}`
 
     return(
-       <>
       
-      <ul key={post.slug}>
-        <p className="text-sm">{formatDate}</p>
-        <li className="text-xl font-semibold link-color">
+      <ul key={post.slug} className="mb-6 blog-link font-semibold">
+        <p className="text-sm">Published on {formatDate}</p>
+        <li className="text-xl link-color">
           <Link href={`/blog/${post.slug}`} >
             <p>{post.title}</p>
           </Link>
         </li>
       </ul>
 
-      </>
     )
     })
    }

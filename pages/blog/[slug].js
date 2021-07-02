@@ -4,7 +4,19 @@ export default function Post( data ){
 
     const post = data.post
     const date = new Date(post.date)
-    const formatDate = `${date.getFullYear()} - ${(date.getMonth()+1)} - ${date.getDate()}`
+    const year = date.getFullYear()
+    let month = date.getMonth() + 1
+    let day = date.getDate()
+
+    if (day < 10) {
+      day = `0${day}`
+    }
+
+    if (month < 10) {
+      month = `0${month}`
+    }
+
+    const formatDate = `${day}-${month}-${year}`
 
     return (
         <div className="pd-screen py-4 h-all">
@@ -12,7 +24,7 @@ export default function Post( data ){
                 <title>Alan's blog | {post.title}</title>
             </Head>
             <h1 className="important-title-page">{post.title}</h1>
-            <p className="text-sm">{formatDate}</p>
+            <p className="text-sm font-semibold mb-4">Published on {formatDate}</p>
             
             <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl"></div>
         </div>
