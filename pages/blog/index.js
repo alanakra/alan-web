@@ -6,7 +6,7 @@ function blog({posts}) {
  return (
   <div className="pd-screen py-4 h-all">
     <Head>
-      <title>Alan Akra | Blog</title>
+      <title>Alan's blog</title>
       <meta name="description" content="My blog on the web" />
     </Head>
 

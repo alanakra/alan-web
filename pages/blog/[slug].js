@@ -9,7 +9,7 @@ export default function Post( data ){
     return (
         <div className="pd-screen py-4 h-all">
             <Head>
-                <title>Alan Akra | {post.title}</title>
+                <title>Alan's blog | {post.title}</title>
             </Head>
             <h1 className="important-title-page">{post.title}</h1>
             <p className="text-sm">{formatDate}</p>
