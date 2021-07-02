@@ -7,18 +7,30 @@ function blog({posts}) {
   <div className="pd-screen py-4 h-all">
     <Head>
       <title>Alan Akra | Blog</title>
+      <meta name="description" content="My blog on the web" />
     </Head>
 
-   <h1 className="important-title-page">Blog</h1>
+   <h1 className="important-title-page">Alan's blog</h1>
    {
     posts.nodes.map(post => {
-     return(
+
+    const date = new Date(post.date)
+    const formatDate = `${date.getFullYear()} - ${(date.getMonth()+1)} - ${date.getDate()}`
+
+    return(
+       <>
+      
       <ul key={post.slug}>
-        <li className="text-xl">
-          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+        <p className="text-sm">{formatDate}</p>
+        <li className="text-xl font-semibold link-color">
+          <Link href={`/blog/${post.slug}`} >
+            <p>{post.title}</p>
+          </Link>
         </li>
       </ul>
-     )
+
+      </>
+    )
     })
    }
   </div>
@@ -39,6 +51,7 @@ export async function getStaticProps(){
         id
         slug
         title
+        date
         featuredImage {
           node {
             sourceUrl

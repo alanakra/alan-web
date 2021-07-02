@@ -3,6 +3,8 @@ import Head from 'next/head'
 export default function Post( data ){
 
     const post = data.post
+    const date = new Date(post.date)
+    const formatDate = `${date.getFullYear()} - ${(date.getMonth()+1)} - ${date.getDate()}`
 
     return (
         <div className="pd-screen py-4 h-all">
@@ -10,7 +12,7 @@ export default function Post( data ){
                 <title>Alan Akra | {post.title}</title>
             </Head>
             <h1 className="important-title-page">{post.title}</h1>
-            <p>{post.date}</p>
+            <p className="text-sm">{formatDate}</p>
             
             <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl"></div>
         </div>
