@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 function About() {
 
   const experience = [{
@@ -64,15 +66,21 @@ function About() {
       />
     </div>
 
-    <p className="text-xl">Hi 👋 I’m <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Alan Akra</a>, a fullstack web developer based in the Greater Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Currently <a href="http://cyu.fr" className="link-color">@CYU</a> on <a href="http://lp-dw.fr" className="link-color">Bachelor Web Development</a> , i’m joining a <a href="https://www.iim.fr/cursus/mastere-ingenierie-web-mobile/" className="link-color">Master of Web & Mobile</a> engineering <a href="http://iim.fr" className="link-color">@IIM</a> in September and I’m looking opportunities for an apprenticeship in web development.</p>
+    <p className="text-xl mb-4">Hi 👋 I’m <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Alan Akra</a>, a fullstack web developer based in the Greater Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Currently <a href="http://cyu.fr" className="link-color">@CYU</a> on <a href="http://lp-dw.fr" className="link-color">Bachelor Web Development</a> , i’m joining a <a href="https://www.iim.fr/cursus/mastere-ingenierie-web-mobile/" className="link-color">Master of Web & Mobile</a> engineering <a href="http://iim.fr" className="link-color">@IIM</a> in September and I’m looking opportunities for an apprenticeship in web development.</p>
 
-    <p className="text-xl">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://github.com/alanakra" className="link-color">GitHub</a>.</p>
+    <p className="text-xl mb-6">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://github.com/alanakra" className="link-color">GitHub</a>.</p>
+
+    <p className="text-xl mb-6 text-center link-color">
+      <Link href="/blog">
+        Blog
+      </Link>
+    </p>
 
     <hr/>
 
     <h2 className="subtitle-page">Experiences</h2>
 
-    <div className="text-lg">
+    <div className="text-lg text-roboto">
       {experience.map((experience) => (
         <>
           <h3>{experience.title} <a href={experience.link} className="link-color">{experience.company}</a></h3>
@@ -84,7 +92,7 @@ function About() {
     <hr/>
 
     <h2 className="subtitle-page">Éducation</h2>
-    <div className="text-lg">
+    <div className="text-lg text-roboto">
       {education.map((education) => (
         <>
           <h3>{education.title} <a href={education.link} className="link-color">{education.school}</a></h3>
