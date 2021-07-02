@@ -3,4 +3,5 @@ module.exports = {
    loader: 'imgix',
    domains: ['alanakra.fr'],
  },
+ trailingSlash: true,
 }
