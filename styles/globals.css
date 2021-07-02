@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+ font-family: "Mulish";
+ src: url("/fonts/Mulish-Bold.woff");
+ font-style: bold;
+}
+
+@font-face {
+ font-family: "Roboto";
+ src: url("/fonts/Roboto-Medium.woff");
+ font-style: normal;
+}
