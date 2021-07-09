@@ -18,6 +18,12 @@ function About() {
   }]
 
   const education = [{
+    title: 'Master of Web & Mobile engineering',
+    school: '@IIM',
+    startDate: 'Oct 2021',
+    endDate: 'June 2022',
+    link: 'http://iim.fr'
+  },{
     title: 'Bachelor Web developer',
     school: '@CYU',
     startDate: 'Sept 2020',
