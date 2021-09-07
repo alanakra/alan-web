@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Spotify from '../components/spotify'
 
 function About() {
 
@@ -76,11 +77,11 @@ function About() {
 
     <p className="text-xl mb-6">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://github.com/alanakra" className="link-color">GitHub</a>.</p>
 
-    <p className="text-xl mb-6 text-center link-color">
+    {/* <p className="text-xl mb-6 text-center link-color">
       <Link href="/blog">
         Blog
       </Link>
-    </p>
+    </p> */}
 
     <hr/>
 
@@ -107,7 +108,12 @@ function About() {
         </>
       ))}
     </div>
+    <hr/>
 
+    <h2 className="subtitle-page">Music</h2>
+    <div className="mb-5">
+      <Spotify idPlaylist="5ToM7nlHudTGskCYMNtAiy"/>
+    </div>
 
   </div>
  );
