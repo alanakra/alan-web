@@ -74,12 +74,6 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
 
     <p className="text-xl mb-6">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://github.com/alanakra" className="link-color">GitHub</a>.</p>
 
-    {/* <p className="text-xl mb-6 text-center link-color">
-      <Link href="/blog">
-        Blog
-      </Link>
-    </p> */}
-
     <hr/>
 
     <h2 className="subtitle-page">Skills</h2>
