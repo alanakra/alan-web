@@ -83,8 +83,8 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
     <hr/>
 
     <h2 className="subtitle-page">Skills</h2>
-    <div className="flex justify-between">
-      <div className="item">
+    <div className="flex flex-col sm:justify-between sm:flex-row text-lg">
+      <div className="item mb-4">
         <p className="font-bold mb-2">Front-End</p>
           <ul>
             <li>HTML</li>
@@ -97,7 +97,7 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
           </ul>
       </div>
 
-      <div className="item">
+      <div className="item mb-4">
       <p className="font-bold mb-2">Back-End</p>
           <ul>
             <li>PHP</li>
@@ -107,7 +107,7 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
           </ul>
       </div>
 
-      <div className="item">
+      <div className="item mb-4">
       <p className="font-bold mb-2">Mobile</p>
           <ul>
             <li>React Native</li>
