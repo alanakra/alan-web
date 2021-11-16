@@ -4,6 +4,8 @@ import Spotify from '../components/spotify'
 
 function About() {
 
+  const skillsFront = ['HTML','SCSS','JS','NextJS','Styled Components','Wordpress']
+
   const experience = [{
     title: 'Web developer',
     company: '@SopraBankingSoftware',
@@ -77,6 +79,41 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
         Blog
       </Link>
     </p> */}
+
+    <hr/>
+
+    <h2 className="subtitle-page">Skills</h2>
+    <div className="flex justify-between">
+      <div className="item">
+        <p className="font-bold mb-2">Front-End</p>
+          <ul>
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>JS</li>
+            <li>NextJS</li>
+            <li>Styled Components</li>
+            <li>Wordpress</li>
+            <li>GSAP</li>
+          </ul>
+      </div>
+
+      <div className="item">
+      <p className="font-bold mb-2">Back-End</p>
+          <ul>
+            <li>PHP</li>
+            <li>Symfony</li>
+            <li>NodeJS</li>
+            <li>Wordpress (Headless)</li>
+          </ul>
+      </div>
+
+      <div className="item">
+      <p className="font-bold mb-2">Mobile</p>
+          <ul>
+            <li>React Native</li>
+          </ul>
+      </div>
+    </div>
 
     <hr/>
 
