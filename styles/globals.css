@@ -13,3 +13,8 @@
  src: url("/fonts/Roboto-Medium.woff");
  font-style: normal;
 }
+
+.wp-block-image, .size-large{
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
