@@ -18,3 +18,9 @@
  margin-top: 1rem;
  margin-bottom: 1rem;
 }
+
+.headless-style>p>a {
+ color: #5023c7;
+ font-weight: bold;
+ font-family: 'Roboto';
+}

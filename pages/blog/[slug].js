@@ -26,7 +26,7 @@ export default function Post( data ){
             <h1 className="important-title-page">{post.title}</h1>
             <p className="text-sm font-semibold mb-4">Published on {formatDate}</p>
             
-            <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl"></div>
+            <div dangerouslySetInnerHTML={{__html: post.content}} className="text-xl headless-style"></div>
         </div>
     )
 
