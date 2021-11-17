@@ -4,6 +4,12 @@
  font-family: 'Mulish';
 }
 
+.title-projects{
+ font-family: 'Mulish';
+ font-size: 1.875rem;
+ margin-bottom: 1rem;
+}
+
 .text-roboto{
  font-family: 'Roboto';
 }
