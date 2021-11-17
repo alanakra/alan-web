@@ -76,8 +76,12 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
         <p className="font-bold mb-2">Front-End</p>
           <ul>
             <li>HTML</li>
-            <li>SCSS</li>
-            <li>JS</li>
+            <a href="https://github.com/alanakra?tab=repositories&q=&type=&language=javascript" className="link-color">
+              <li>SCSS</li>
+            </a>
+            <a href="https://github.com/alanakra?tab=repositories&q=&type=&language=javascript" className="link-color">
+              <li>JS</li>
+            </a>
             <li>NextJS</li>
             <li>Styled Components</li>
             <li>Wordpress</li>
@@ -88,7 +92,10 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
       <div className="item mb-4">
       <p className="font-bold mb-2">Back-End</p>
           <ul>
-            <li>PHP</li>
+            <a href="https://github.com/alanakra?tab=repositories&q=&type=&language=php"
+            className="link-color">
+              <li>PHP</li>
+            </a>
             <li>Symfony</li>
             <li>NodeJS</li>
             <li>Wordpress (Headless)</li>
@@ -98,7 +105,9 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
       <div className="item mb-4">
       <p className="font-bold mb-2">Mobile</p>
           <ul>
-            <li>React Native</li>
+            <a href="https://github.com/alanakra/MPG" className="link-color">
+              <li>React Native</li>
+            </a>
           </ul>
       </div>
     </div>
