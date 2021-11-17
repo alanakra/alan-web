@@ -34,7 +34,7 @@ function About() {
   }]
 
  return (
-  <div className="pd-screen py-4 h-all">
+  <div className="pd-screen py-4 h-all screen">
 
     <Head>
       <title>Alan Akra | Web developer</title>
@@ -45,9 +45,7 @@ function About() {
     <style global jsx>{`
       html,
       body,
-      body > div:first-child,
-      div#__next,
-      div#__next > div {
+      screen {
         height: 100%;
       }
 
@@ -55,8 +53,6 @@ function About() {
         min-height: 100%;
       }
     `}</style>
-
-    <h1 className="important-title-page gradient-text">About me</h1>
 
     <div className="flex justify-center mb-5">
       <img
