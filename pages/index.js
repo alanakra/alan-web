@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Spotify from '../components/spotify'
+
 function About() {
 
   const skillsFront = ['HTML','SCSS','JS','NextJS','Styled Components','Wordpress']
@@ -128,12 +127,6 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
           <br/>
         </>
       ))}
-    </div>
-    <hr/>
-
-    <h2 className="subtitle-page">Music</h2>
-    <div className="mb-5">
-      <Spotify idPlaylist="5ToM7nlHudTGskCYMNtAiy"/>
     </div>
 
   </div>
