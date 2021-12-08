@@ -7,7 +7,7 @@ export default function Post( data ){
     return (
         <div className="pd-screen py-4 h-all">
             <Head>
-                <title>Alan's blog | {post.title}</title>
+                <title>Alan Akra's project | {post.title}</title>
             </Head>
             <h1 className="title-projects">{post.title}</h1>
             
