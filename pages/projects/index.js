@@ -12,22 +12,23 @@ export default function AllProjects({posts}) {
     </Head>
 
    <h1 className="title-projects">My projects</h1>
+    <p className="text-lg mb-3">Some selected pieces of projects...</p>
+    <ul className="blog-link font-semibold mpme">
+
     {
       posts.nodes.map(post => {
-
-      return(
         
-        <ul key={post.slug} className="mb-6 blog-link font-semibold">
-          <li className="text-xl link-color">
+        return(  
+          <li className="text-xl mb-6 link-color">
             <Link href={`/projects/${post.slug}`} >
-              <p>{post.title}</p>
+              <a>{post.title}</a>
             </Link>
           </li>
-        </ul>
-
       )
       })
     }
+    </ul>
+    <p className="text-lg mt-3">...and i also have a <a href="https://codepen.io/alanakra" className="link-color">codepen</a></p>
   </div>
  );
 
