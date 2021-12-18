@@ -63,8 +63,7 @@ function About() {
       />
     </div>
 
-    <p className="text-xl mb-4">Hi 👋 I’m <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Alan Akra</a>, a fullstack web developer based in the Greater Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Recently graduated from <a href="http://cyu.fr" className="link-color">@CYU</a> on <a href="http://lp-dw.fr" className="link-color">Bachelor Web Development</a> , i’m looking opportunities for a permanent contract in web development.
-I am also available for <a href="https://www.malt.fr/profile/alanakra" className="link-color">freelance</a> assignments.</p>
+    <p className="text-xl mb-4">Hi 👋 I’m <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Alan Akra</a>, a fullstack web developer based in the Greater Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Recently graduated from <a href="http://cyu.fr" className="link-color">@CYU</a> on <a href="http://lp-dw.fr" className="link-color">Bachelor Web Development</a> , i’m looking opportunities for a permanent contract in web development.</p>
 
     <hr/>
 
@@ -138,7 +137,9 @@ I am also available for <a href="https://www.malt.fr/profile/alanakra" className
     <hr/>
 
     <h2 className="subtitle-page">Contact</h2>
-    <p className="text-xl mb-6">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Linkedin</a>.</p>
+    <p className="text-xl mb-6">You can reach me with my <a href="mailto:alanakra@hotmail.fr" className="link-color">email</a>, my <a href="/cv.pdf" className="link-color">CV</a> (in french) and my <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Linkedin</a>.<br/>
+    I am also available for <a href="https://www.malt.fr/profile/alanakra" className="link-color">freelance</a> assignments.
+    </p>
 
   </div>
  );
