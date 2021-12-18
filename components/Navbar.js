@@ -7,10 +7,11 @@ export default function Navbar (props) {
     <a className="nav-name">alanakra.fr</a>
    </Link>
 
-   <div className="list-links flex justify-between w-35 sm:w-15">
+   <div className="list-links flex justify-between w-50 sm:w-25">
     <Link href="/projects">
      <a>Projects</a>
     </Link>
+     <a href="https://github.com/alanakra">GitHub</a>
      <a href="https://myblog-coral.vercel.app/">Blog</a>
    </div>
   </div>
