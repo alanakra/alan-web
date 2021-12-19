@@ -3,6 +3,7 @@ import 'tailwindcss/tailwind.css'
 import '../styles/styles.css'
 import Navbar from '../components/Navbar'
 import Head from 'next/head'
+import Banner from '../components/Banner'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="theme-color" content="#000000"/>
       </Head>
+      <Banner/>
       <Navbar/>
       <Component {...pageProps} />
     </>
