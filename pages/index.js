@@ -63,7 +63,8 @@ function About() {
       />
     </div>
 
-    <p className="text-xl mb-4">Hi 👋 I’m <a href="https://www.linkedin.com/in/alanakra/" className="link-color">Alan Akra</a>, a fullstack web developer based in the Greater Paris. I’m a emphatic person and I love code and manage digital projects. I also like Bo Bun and Phở 🍜. Recently graduated from <a href="http://cyu.fr" className="link-color">@CYU</a> on <a href="http://lp-dw.fr" className="link-color">Bachelor Web Development</a> , i’m looking opportunities for a permanent contract in web development.</p>
+    <h1 className="subtitle-page">About Me</h1>
+    <p className="text-xl mb-4">Hi 👋🏿 I’m Alan Akra, a Front-End web developer based in the Greater Paris.</p>
 
     <hr/>
 
