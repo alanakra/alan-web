@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="theme-color" content="#000000"/>
+        <script async src="https://kit.fontawesome.com/997660e778.js" crossOrigin="anonymous"></script>
       </Head>
       <Banner/>
       <Navbar/>
