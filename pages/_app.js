@@ -4,14 +4,15 @@ import '../styles/styles.css'
 import Navbar from '../components/Navbar'
 import Head from 'next/head'
 import Banner from '../components/Banner'
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   
-  if (typeof window !== 'undefined') {
-      const isBannerClosed = sessionStorage.getItem('hideBanner')
-      console.log(isBannerClosed)
-  }
+  useLayoutEffect(()=>{
+    const isBannerClosed = sessionStorage.getItem('hideBanner')
+    console.log(isBannerClosed)
+  })
+  
 
   return (
     <>

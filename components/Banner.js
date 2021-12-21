@@ -1,11 +1,12 @@
 import Link from 'next/link'
 
 export default function Banner(props) {
- console.log(props)
+//  console.log(props)
 
  const hideBanner = () => {
   if (typeof window !== 'undefined') {
-    sessionStorage.setItem('hideBanner', true)
+    sessionStorage.setItem('hideBanner', true.toString())
+    console.log('from banner component: '+sessionStorage.getItem('hideBanner'))
   }
  }
 
