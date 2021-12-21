@@ -13,6 +13,18 @@
  line-height: 2.75rem;
 }
 
+.link-banner{
+  font-weight: bold;
+  font-family: 'Roboto';
+  background: linear-gradient(90deg, #02A9F5 0%, #C61FED 50%, #E0756E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animateText 3s infinite alternate-reverse;
+}
+
 @keyframes animateText {
  from{
    background-position: 0%;

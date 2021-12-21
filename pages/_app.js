@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#000000"/>
         <script async src="https://kit.fontawesome.com/997660e778.js" crossOrigin="anonymous"></script>
       </Head>
-      <Banner warn={'isBannerClosed'}/>
+      <Banner/>
       <Navbar/>
       <Component {...pageProps} />
     </>
